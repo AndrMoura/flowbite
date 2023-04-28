@@ -202,8 +202,10 @@ class Modal implements ModalInterface {
     }
 }
 
+
 if (typeof window !== 'undefined') {
     window.Modal = Modal;
+    window.Instances = [] as ModalInstance[];
 }
 
 const getModalInstance = (id: string, instances: ModalInstance[]) => {
@@ -213,9 +215,10 @@ const getModalInstance = (id: string, instances: ModalInstance[]) => {
     return null;
 };
 
-export function initModals() {
-    const modalInstances = [] as ModalInstance[];
+export const modalInstances = window.Instances;
 
+export function initModals() {
+ 
     // initiate modal based on data-modal-target
     document.querySelectorAll('[data-modal-target]').forEach(($triggerEl) => {
         const modalId = $triggerEl.getAttribute('data-modal-target');
@@ -226,7 +229,7 @@ export function initModals() {
             const backdrop = $modalEl.getAttribute('data-modal-backdrop');
 
             if (!getModalInstance(modalId, modalInstances)) {
-                modalInstances.push({
+                window.Instances.push({
                     id: modalId,
                     object: new Modal(
                         $modalEl as HTMLElement,

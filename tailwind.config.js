@@ -6,6 +6,7 @@ module.exports = {
         './content/**/*.html',
         './src/**/*.ts',
         './src/**/*.js',
+        './node_modules/flowbite/**/*.js',
     ],
     safelist: [
         'w-64',
@@ -85,5 +86,5 @@ module.exports = {
             backgroundColor: ['active'],
         },
     },
-    plugins: [require('./plugin')],
+    plugins: [require('./plugin'), require('flowbite/plugin')],
 };

@@ -9,9 +9,11 @@ import Modal from '../components/modal';
 import Popover from '../components/popover';
 import Tabs from '../components/tabs';
 import Tooltip from '../components/tooltip';
+import type { ModalInstance } from '../components/modal/types';
 
 declare global {
     interface Window {
+        Instances: ModalInstance[];
         Accordion: typeof Accordion;
         Carousel: typeof Carousel;
         Collapse: typeof Collapse;

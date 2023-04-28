@@ -109,6 +109,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.3",
+    "flowbite": "^1.6.5",
     "mini-svg-data-uri": "^1.4.3"
   },
   "files": [

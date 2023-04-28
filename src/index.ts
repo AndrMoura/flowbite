@@ -12,6 +12,8 @@ import { initPopovers } from './components/popover';
 import { initDials } from './components/dial';
 
 // setup events for data attributes
+
+
 const events = new Events('load', [
     initAccordions,
     initCollapses,
@@ -78,6 +80,7 @@ export { initModals } from './components/modal';
 export { initPopovers } from './components/popover';
 export { initTabs } from './components/tabs';
 export { initTooltips } from './components/tooltip';
+export { modalInstances } from './components/modal';
 
 // export all init functions
 export { initFlowbite } from './components/index';
