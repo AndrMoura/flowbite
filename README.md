@@ -14,7 +14,7 @@
 
 ------
 ## Table of Contents
-- [Init Modals](#init-modal-changes---new)
+- [Access to modal instances](#getting-access-to-flowbite-modals---new) - NEW
 - [Table of Contents](#table-of-contents)
 - [Documentation](#documentation)
 - [Getting started](#getting-started)
@@ -35,7 +35,7 @@
 - [Copyright and license](#copyright-and-license)
 
 
-## Init Modal Changes - New
+## Getting Access to flowbite modals - New
 
 This branch exposes modal instances that are initially created by the `initModals()` function.  This allows for the modal instances to be accessed by other scripts using window.Instances.
 
