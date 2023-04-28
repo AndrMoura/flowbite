@@ -14,7 +14,7 @@
 
 ------
 ## Table of Contents
-
+- [Init Modals](#init-modal-changes---new)
 - [Table of Contents](#table-of-contents)
 - [Documentation](#documentation)
 - [Getting started](#getting-started)
@@ -33,6 +33,23 @@
 - [Pro version](#pro-version)
 - [Community](#community)
 - [Copyright and license](#copyright-and-license)
+
+
+## Init Modal Changes - New
+
+This branch exposes modal instances that are initially created by the `initModals()` function.  This allows for the modal instances to be accessed by other scripts using window.Instances.
+
+Install flowbite (or check the below [section](#getting-started) for more details):
+```bash
+npm install flowbite
+```
+Compile Flowbite to javascript:
+```bash
+npm install -g typescript
+npm run build:dist
+```
+Check the `dist` folder for the `flowbite.min.js` file.
+
 
 ## Documentation
 
@@ -250,7 +267,7 @@ Learn more about Flowbite and TypeScript in the [quickstart guide](https://flowb
 The awesome open-source community also built and currently maintains the following standalone libraries for React, Vue, Svelte, and Angular:
 
 - [🌀 Flowbite React Library](https://github.com/themesberg/flowbite-react)
-- [🍀 Flowbite Vue Library](https://github.com/themesberg/flowbite-vue)
+- [🝀 Flowbite Vue Library](https://github.com/themesberg/flowbite-vue)
 - [🎸 Flowbite Svelte Library](https://github.com/themesberg/flowbite-svelte)
 - [📕 Flowbite Angular Library](https://github.com/themesberg/flowbite-angular)
 
@@ -273,8 +290,8 @@ Flowbite has a great integration with most of the back-end frameworks because it
 - [📚 Using Flowbite with Laravel](https://flowbite.com/docs/getting-started/laravel/)
 - [🎼 Using Flowbite with Symfony](https://flowbite.com/docs/getting-started/symfony/)
 - [🚊 Using Flowbite with Ruby on Rails 7](https://flowbite.com/docs/getting-started/rails/)
-- [🐉 Using Flowbite with Phoenix (Elixir)](https://flowbite.com/docs/getting-started/phoenix/)
-- [🐸 Using Flowbite with Django](https://flowbite.com/docs/getting-started/django/)
+- [🝉 Using Flowbite with Phoenix (Elixir)](https://flowbite.com/docs/getting-started/phoenix/)
+- [🝸 Using Flowbite with Django](https://flowbite.com/docs/getting-started/django/)
 - [🌶 Using Flowbite with Flask](https://flowbite.com/docs/getting-started/flask/)
 
 ## Components
@@ -738,7 +755,7 @@ Get access to all premium features including the Figma design system, access to 
 
 If you need help or just want to discuss about the library join the community on Github:
 
-⌨️ [Discuss about Flowbite on GitHub](https://github.com/themesberg/flowbite/discussions)
+⌨︝ [Discuss about Flowbite on GitHub](https://github.com/themesberg/flowbite/discussions)
 
 For casual chatting with others using the library:
 
